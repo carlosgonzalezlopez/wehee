@@ -1,7 +1,7 @@
 {
   "name": "botpress-wehee",
   "version": "1.0.0",
-  "description": "",
+  "description": "Primer modulo de wehee para botpress",
   "main": "bin/node.bundle.js",
   "botpress": {
     "menuText": "botpress-wehee",
