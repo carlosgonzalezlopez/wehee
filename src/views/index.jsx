@@ -1,10 +1,12 @@
 import React from 'react'
 
-import style from './style.scss'
-
 export default class TemplateModule extends React.Component {
 
-  render() {
-    return <h4>This module is empty...</h4>
-  }
+ emitEvent() {
+   this.props.bp.events.emit('test.clicked', { a: '123' })
+ }
+
+ render() {
+   return <button onClick={::this.emitEvent}>Click me</button>
+ }
 }
