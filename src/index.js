@@ -20,5 +20,9 @@ module.exports = {
     const config = await configurator.loadAll()
     // Do fancy stuff here :)
 
+    bp.events.on('test.clicked', data => {
+      bp.logger.debug('[EVENT TEST]', data)
+    })
+
   }
 }
